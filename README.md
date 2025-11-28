@@ -50,7 +50,7 @@ docker exec -i boardgame_postgres psql -U postgres -d boardgame_db < database/sc
 ```bash
 cd backend
 npm install
-cp .env.example .env
+cp .env .env
 # .env 파일에 OAuth 키 입력
 npm run dev
 ```
