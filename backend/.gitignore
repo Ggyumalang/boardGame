@@ -1,9 +1,20 @@
-node_modules/
+# 환경 변수 파일
 .env
-dist/
-build/
+.env.local
+.env.development
+.env.production
+
+# 의존성
+node_modules/
+
+# 로그
 *.log
+npm-debug.log*
+
+# OS
 .DS_Store
-coverage/
+Thumbs.db
+
+# IDE
 .vscode/
 .idea/
