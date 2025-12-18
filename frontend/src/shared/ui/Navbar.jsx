@@ -96,11 +96,10 @@ const Navbar = () => {
                         <span className="text-xl">🎮</span>
                         <span className="text-xs mt-1">게임</span>
                     </Link>
-                    <div className="relative -top-5">
-                        <Link to="/sessions/new" className="flex items-center justify-center w-14 h-14 bg-primary text-white rounded-full shadow-lg hover:bg-primary-dark transition-colors">
-                            <span className="text-2xl">+</span>
-                        </Link>
-                    </div>
+                    <Link to="/sessions/new" className={`flex flex-col items-center p-2 rounded-lg ${isActive('/sessions/new') ? 'text-primary' : 'text-secondary'}`}>
+                        <span className="text-xl">✍️</span>
+                        <span className="text-xs mt-1">기록</span>
+                    </Link>
                     <Link to="/stats" className={`flex flex-col items-center p-2 rounded-lg ${isActive('/stats') ? 'text-primary' : 'text-secondary'}`}>
                         <span className="text-xl">📊</span>
                         <span className="text-xs mt-1">통계</span>

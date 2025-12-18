@@ -423,19 +423,36 @@ a:hover {
   border-radius: var(--radius-full);
 }
 
-.shadow-sm {
-  box-shadow: var(--shadow-sm);
+/* Utilities */
+.overflow-hidden {
+  overflow: hidden;
 }
 
-.shadow-md {
-  box-shadow: var(--shadow-md);
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
-.shadow-lg {
-  box-shadow: var(--shadow-lg);
+.max-h-90 {
+  max-height: 90vh;
 }
 
-/* Spacing Utilities (Tailwind-like) */
+.border-b {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.border-t {
+  border-top: 1px solid var(--border-color);
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.min-h-0 {
+  min-height: 0;
+}
+
+/* Shadows */
 .p-1 {
   padding: 0.25rem;
 }
@@ -981,6 +998,13 @@ a:hover {
 
 .top-0 {
   top: 0;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .bottom-0 {
